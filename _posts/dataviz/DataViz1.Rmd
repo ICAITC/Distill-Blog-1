@@ -1,0 +1,98 @@
+---
+title: "DataViz Makeover 1"
+description: |
+  Ageing population and labour force.
+author:
+  - name: Tan Huiyong
+    url: https://sg.linkedin.com/in/tan-huiyong-72a1224b
+date: 01-28-2021
+output:
+  distill::distill_article:
+    self_contained: false
+
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+**Data Visualisation Link (Tableau Public)** - https://public.tableau.com/profile/tan.huiyong#!/vizhome/DataVizMakeover1_16117543772550/Dashboard1?publish=yes
+
+# a.    Critiques and Suggestions for Current Visualisations 
+
+```{r, echo=FALSE, message=FALSE, layout ='1-body-outset', fig.width=12, fig.height=6}
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/critique.jpg")
+```
+
+
+|S/N| Critique Area  |Description                                                   |
+|---|----------------|--------------------------------------------------------------|
+|1  |Clarity                                              |The chart is not representative of what the accompanying text was trying to convey. The accompanying text focuses on resident labour force of age 25 to 54 and 55 a & above, but the chart binned he age in groups of 5 years. Moreover, the text mentioned about the increase of Labour Force Participation Rate (LFPR) for resident labour force aged 25 to 54 from 2009 to 2019, but LFPR was not even shown in the chart.|
+|2  |Clarity                                              |The age in the x-axis is binned, such that 40-44 years old is in one bin. However, the chart attempted to show an increase of median age of the labour force from 41 to 44 years old by showing a shift in the median age by 3 years within the same bin. This representation is misleading and should be avoided.|
+|3  |Clarity                                              |It is not clear to the readers to be able to observe the increase of the share of residents aged 55 & over in the labour force at first glance |
+|4  |Aesthetics                                              |The colour theme used is simple and clear, will adopt the simplistic approach in visualization.|
+|5  |Aesthetics                                              |There is not tick mark for the y axis, viewers must look at both the table and the graph to make sense out of it. Tick marks should be added|
+|6  |Aesthetics                                              |The axis label is located at an odd position, outside the chart area. It is non-intuitive for reader to understand the representation of the y-axis at first glance|
+|7  |Aesthetics                                              |The chart is unable to display all the information described in the accompany text. More visualizations are needed to display all of the information.|
+
+
+# b.     Proposed alternative data visualisation
+
+
+```{r, echo=FALSE, message=FALSE, layout ='1-body-outset', fig.width=12, fig.height=6}
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/proposed_cropped.jpg")
+```
+
+The proposed visualization is designed to overcome the misrepresentation of the original chart. The age groups are now binned according to the age band described by the accompany text in "25-54" and "55 & abv".\ 
+
+Next, It would also display the changes of the age group composition of the labour force.\ 
+
+Lastly, the visualization would also display teh changes of the LFPR by each age group.
+
+# d.    Step-by-step description of visualization
+|s/n| Area                                              | Action                                      |
+|---|--------------------------------------------------|------------------------------------------------------|
+|1  | The original data source is not in a report summary format where the rows do not represent the individual records of the data and direct import of such data would result in inaccuracy ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step1_summary_data.jpg)|   Check “Cleaned with Data Intepreter” to clean up the format \ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/Data_Intepreter.png) ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step1_intepreted_data.jpg)|
+|2  | Column “F1” is not applicable in the visualization|Column is hidden away. ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step2_hidden.jpg)|
+|3  |The years are split into respective columns. It limits the visualization aspect.|Pivoting the data to collapse the years into a single column and rename the pivoted columns to “Year” “Age” and  “Labour Force Participation Rate”.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step3_pivot.jpg)|
+|4  |Remnants of summary report that are not required in the visualization, like “Total” in “Age Group”, “25 – 64” is present.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step4_total.jpg) |Filter is applied to get the age groups in the bins of 5 years. \ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step4_filter.jpg)|
+|5  |Export data|The transformed data is copied in the Microsoft Excel and is saved.|
+|6  |The data source contains information on resident labour force participation rate by age, but it does not contain data on the labour force population by age. |Another data table is required to provide the data on labour force population. Such data is found on the same publication as the original data source, at https://stats.mom.gov.sg/Pages/Labour-Force-Tables2019.aspx, Table 7: RESIDENT LABOUR FORCE AGED FIFTEEN YEARS AND OVER BY AGE AND SEX, 2009 -2019 (JUNE)|
+|7  |Format of data is similar to Table 5, transformation required.|Step 1 to 5 is repeated for Table 7.|
+|8  |Combining 2 data sources|The 2 data sources are combined into one data table using inner join. As the data tables are in pivot format, the inner join is on both “Age” and “Year in order to ensure 1:1 join relationship.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step8_join.jpg) |
+|9  |Create new group [Age Group]|The Age are grouped into “15-24”, “25-54” and “55 & Abv” as this would be reflective to the description of the text accompanying the visualization.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step9_group.jpg)|
+|10 |Data could not be published on Tableau Public|The data needs to be changed to “Extract” for the data to be published on Tableau.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step10_connection.jpg)|
+|11 |Create calculated field [Labour Force Participation]|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step11_lfp.jpg)\|
+|12  |Create calculated field [Total Labour Force]|This is to get the total labour force per year.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step12_tlp.jpg)|
+|13  |Create calculated field [Share of Labour Force]|This is to get the share of the labour force per age group per year.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step13_share.jpg)|
+|14  |Convert [Year] to discrete|This would make filtering year 2009 and 2019 easier.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step14_discrete.jpg)|
+|15  |Creating Pie Chart to display changes in age composition of labour force from 2009 to 2019|Fitlering of year.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step15_filtering.jpg)|
+|16  |Continued...|Column settings.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step16_column.jpg)|
+|17  |Continued...|Other Parameters\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step17_parameters.jpg)|
+|18  |Continued...|The labels settings.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step18_label.jpg)|
+|19  |Transforming into Donut Chart|The pie chart is insufficient to present all of the information required, thus, the pie chart is converted to a donut chart. |
+|20 |Continued...|Creation of dummy calculated field for donut chart\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step20_dummy.jpg)|
+|21 |Continued...|Create a dual axis using the dummy measure value with dual axis\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step21_dual.jpg)|
+|22 |Continued...|Set the second chart as circle. Use [Total Labour Force] as the label and adjust position it in the centre of the donut.\
+The centre of the donut chart will have labels that include the total labour force of the respective years and the median age.\
+The median age is created using calculated field with the following formula: if [Year] = 2009 then 41 elseif [Year] = 2019 then 44 END\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step22_parameter.jpg) |
+|23 |Continued...|Change the colour to white and reduce the size so that a donut is formed.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step23_color.jpg)|
+|24 |Continued...|The label is then customized to display teh crucial information.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step24_label.jpg)|
+|25 |Creating line chart that depicts the changes in LFPR in each age group from 2009 and 2019|This chart would shows the trend, changes of the LFPR over the 10 years|
+|26 |Create calculated field [LFP Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step25_lfp.jpg)|
+|27 |Create calculated field [Labour Force Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step27_labourforce.jpg)|
+|28 |Create calculated field [LDPR Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step26_lfpr.jpg)|
+|29 |Setting parameters of the line chart|Quick table calculation of "Difference" is applied onto [LFPR Age Group]. This would allow the line chart to display the percentage difference.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step28_parameter.jpg)|
+|30 |Dashboard of the visualization.  |Both the donut and the line charts are placed in the dashboard to show the neccesary data.|
+
+
+# e.    Observations
+
+Age group 55 & abv shows increase in most of the years between 2009 and 2019. This suggests that the LFPR of the older resident increases as Singapore experiences ageing population.
+
+Age group 25-54 has also shown increase in LFPR from 2009 to 2019 despite its decreasing share in labour force. This suggests that the resident labour force is ageing as well.
+
+There is an increase in the total resident labour force from 2009 and 2019 despite the effects of ageing population.
+
+

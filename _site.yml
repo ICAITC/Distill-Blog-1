@@ -1,7 +1,7 @@
 name: "Distill Blog"
-title: "Pre-Lesson 1"
+title: "Blog for Data Visualization Module"
 description: |
-  Pre-Lesson 1
+  It shall contain works done in the module
 output_dir: "_site"
 navbar:
   right:

@@ -9,11 +9,18 @@
       "last_modified": "2021-01-04T21:14:16+08:00"
     },
     {
+      "path": "dataviz.html",
+      "title": "My DataViz Makeover",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-01-24T22:04:35+08:00"
+    },
+    {
       "path": "index.html",
       "title": "Distill Blog 1",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-01-04T21:14:16+08:00"
+      "last_modified": "2021-01-24T21:55:32+08:00"
     }
   ],
   "collections": ["posts/posts.json"]
