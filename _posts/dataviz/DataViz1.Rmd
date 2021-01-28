@@ -87,7 +87,13 @@ The median age is created using calculated field with the following formula: if 
 |30 |Dashboard of the visualization.  |Both the donut and the line charts are placed in the dashboard to show the neccesary data.|
 
 
-# e.    Observations
+# e.    Observations from Final Visualization
+
+
+```{r fig.cap="*Final Visualization*", out.extra="class=external"}
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/final_visual.jpg")
+```
+
 
 Age group 55 & abv shows increase in most of the years between 2009 and 2019. This suggests that the LFPR of the older resident increases as Singapore experiences ageing population.
 
