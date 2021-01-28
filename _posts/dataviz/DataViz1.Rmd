@@ -71,20 +71,26 @@ Lastly, the visualization would also display teh changes of the LFPR by each age
 |16  |Continued...|Column settings.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step16_column.jpg)|
 |17  |Continued...|Other Parameters\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step17_parameters.jpg)|
 |18  |Continued...|The labels settings.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step18_label.jpg)|
-|19  |Transforming into Donut Chart|The pie chart is insufficient to present all of the information required, thus, the pie chart is converted to a donut chart. |
-|20 |Continued...|Creation of dummy calculated field for donut chart\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step20_dummy.jpg)|
-|21 |Continued...|Create a dual axis using the dummy measure value with dual axis\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step21_dual.jpg)|
-|22 |Continued...|Set the second chart as circle. Use [Total Labour Force] as the label and adjust position it in the centre of the donut.\
+|19  |The resulting pie chart| ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step18_pie.jpg)|
+|20  |Transforming into Donut Chart|The pie chart is insufficient to present all of the information required, thus, the pie chart is converted to a donut chart. |
+|21 |Continued...|Creation of dummy calculated field for donut chart\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step20_dummy.jpg)|
+|22 |Continued...|Create a dual axis using the dummy measure value with dual axis\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step21_dual.jpg)|
+|23 |Continued...|Set the second chart as circle. Use [Total Labour Force] as the label and adjust position it in the centre of the donut.\
 The centre of the donut chart will have labels that include the total labour force of the respective years and the median age.\
-The median age is created using calculated field with the following formula: if [Year] = 2009 then 41 elseif [Year] = 2019 then 44 END\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step22_parameter.jpg) |
-|23 |Continued...|Change the colour to white and reduce the size so that a donut is formed.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step23_color.jpg)|
-|24 |Continued...|The label is then customized to display teh crucial information.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step24_label.jpg)|
-|25 |Creating line chart that depicts the changes in LFPR in each age group from 2009 and 2019|This chart would shows the trend, changes of the LFPR over the 10 years|
-|26 |Create calculated field [LFP Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step25_lfp.jpg)|
-|27 |Create calculated field [Labour Force Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step27_labourforce.jpg)|
-|28 |Create calculated field [LDPR Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step26_lfpr.jpg)|
-|29 |Setting parameters of the line chart|Quick table calculation of "Difference" is applied onto [LFPR Age Group]. This would allow the line chart to display the percentage difference.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step28_parameter.jpg)|
-|30 |Dashboard of the visualization.  |Both the donut and the line charts are placed in the dashboard to show the neccesary data.|
+The median age is created using calculated field with the following formula: if [Year] = 2009 then 41 elseif [Year] = 2019 then 44 END\
+![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step22_parameter.jpg) |
+|24 |Continued...|Change the colour to white and reduce the size so that a donut is formed.\
+![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step23_color.jpg)|
+|25 |Continued...|The label is then customized to display the crucial information.\ ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step24_label.jpg)|
+|26 |The resulting visualization of donut chart.| ![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step24_donut.jpg)|
+|27 |Creating line chart that depicts the changes in LFPR in each age group from 2009 and 2019|This chart would shows the trend, changes of the LFPR over the 10 years|
+|28 |Create calculated field [LFP Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step25_lfp.jpg)|
+|29 |Create calculated field [Labour Force Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step27_labourforce.jpg)|
+|30 |Create calculated field [LDPR Age Group] for each age group|![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step26_lfpr.jpg)|
+|31 |Setting parameters of the line chart|Quick table calculation of "Difference" is applied onto [LFPR Age Group].\
+This would allow the line chart to display the percentage difference.\
+![Alt text](D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz1_files/Images/step28_parameter.jpg)|
+|32 |Dashboard of the visualization.  |Both the donut and the line charts are placed in the dashboard to show the necessary data.|
 
 
 # e.    Observations from Final Visualization

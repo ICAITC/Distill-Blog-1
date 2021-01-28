@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["data/wine_quality.csv","DataViz1_files/anchor-4.2.2/anchor.min.js","DataViz1_files/bowser-1.9.3/bowser.min.js","DataViz1_files/distill-2.2.21/template.v2.js","DataViz1_files/figure-html5/unnamed-chunk-3-1.png","DataViz1_files/figure-html5/unnamed-chunk-4-1.png","DataViz1_files/Images/critique.jpg","DataViz1_files/Images/Data_Intepreter.png","DataViz1_files/Images/final_visual.jpg","DataViz1_files/Images/proposed.jpg","DataViz1_files/Images/proposed_cropped.jpg","DataViz1_files/Images/step1_intepreted_data.jpg","DataViz1_files/Images/step1_summary_data.jpg","DataViz1_files/Images/step10_connection.jpg","DataViz1_files/Images/step11_LFP.jpg","DataViz1_files/Images/step12_TLP.jpg","DataViz1_files/Images/step13_share.jpg","DataViz1_files/Images/step14_discrete.jpg","DataViz1_files/Images/step15_filtering.jpg","DataViz1_files/Images/step16_column.jpg","DataViz1_files/Images/step17_parameters.jpg","DataViz1_files/Images/step18_label.jpg","DataViz1_files/Images/step2_hidden.jpg","DataViz1_files/Images/step20_dummy.jpg","DataViz1_files/Images/step21_dual.jpg","DataViz1_files/Images/step22_parameter.jpg","DataViz1_files/Images/step23_color.jpg","DataViz1_files/Images/step24_label.jpg","DataViz1_files/Images/step25_LFP.jpg","DataViz1_files/Images/step26_LFPR.jpg","DataViz1_files/Images/step27_labourforce.jpg","DataViz1_files/Images/step28_parameter.jpg","DataViz1_files/Images/step3_pivot.jpg","DataViz1_files/Images/step4_filter.jpg","DataViz1_files/Images/step4_total.jpg","DataViz1_files/Images/step8_join.jpg","DataViz1_files/Images/step9_group.jpg","DataViz1_files/jquery-1.11.3/jquery.min.js","DataViz1_files/l-body-figure.png","DataViz1_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["data/wine_quality.csv","DataViz1_files/anchor-4.2.2/anchor.min.js","DataViz1_files/bowser-1.9.3/bowser.min.js","DataViz1_files/distill-2.2.21/template.v2.js","DataViz1_files/figure-html5/unnamed-chunk-3-1.png","DataViz1_files/figure-html5/unnamed-chunk-4-1.png","DataViz1_files/Images/critique.jpg","DataViz1_files/Images/Data_Intepreter.png","DataViz1_files/Images/final_visual.jpg","DataViz1_files/Images/proposed.jpg","DataViz1_files/Images/proposed_cropped.jpg","DataViz1_files/Images/step1_intepreted_data.jpg","DataViz1_files/Images/step1_summary_data.jpg","DataViz1_files/Images/step10_connection.jpg","DataViz1_files/Images/step11_LFP.jpg","DataViz1_files/Images/step12_TLP.jpg","DataViz1_files/Images/step13_share.jpg","DataViz1_files/Images/step14_discrete.jpg","DataViz1_files/Images/step15_filtering.jpg","DataViz1_files/Images/step16_column.jpg","DataViz1_files/Images/step17_parameters.jpg","DataViz1_files/Images/step18_label.jpg","DataViz1_files/Images/step18_pie.jpg","DataViz1_files/Images/step2_hidden.jpg","DataViz1_files/Images/step20_dummy.jpg","DataViz1_files/Images/step21_dual.jpg","DataViz1_files/Images/step22_parameter.jpg","DataViz1_files/Images/step23_color.jpg","DataViz1_files/Images/step24_donut.jpg","DataViz1_files/Images/step24_label.jpg","DataViz1_files/Images/step25_LFP.jpg","DataViz1_files/Images/step26_LFPR.jpg","DataViz1_files/Images/step27_labourforce.jpg","DataViz1_files/Images/step28_parameter.jpg","DataViz1_files/Images/step3_pivot.jpg","DataViz1_files/Images/step4_filter.jpg","DataViz1_files/Images/step4_total.jpg","DataViz1_files/Images/step8_join.jpg","DataViz1_files/Images/step9_group.jpg","DataViz1_files/jquery-1.11.3/jquery.min.js","DataViz1_files/l-body-figure.png","DataViz1_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2221,65 +2221,79 @@ document.addEventListener('DOMContentLoaded', function() {
 </tr>
 <tr class="odd">
 <td>19</td>
-<td>Transforming into Donut Chart</td>
-<td>The pie chart is insufficient to present all of the information required, thus, the pie chart is converted to a donut chart.</td>
+<td>The resulting pie chart</td>
+<td><img src="DataViz1_files/Images/step18_pie.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="even">
 <td>20</td>
-<td>Continued…</td>
-<td>Creation of dummy calculated field for donut chart <img src="DataViz1_files/Images/step20_dummy.jpg" alt="Alt text" /></td>
+<td>Transforming into Donut Chart</td>
+<td>The pie chart is insufficient to present all of the information required, thus, the pie chart is converted to a donut chart.</td>
 </tr>
 <tr class="odd">
 <td>21</td>
 <td>Continued…</td>
-<td>Create a dual axis using the dummy measure value with dual axis <img src="DataViz1_files/Images/step21_dual.jpg" alt="Alt text" /></td>
+<td>Creation of dummy calculated field for donut chart <img src="DataViz1_files/Images/step20_dummy.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="even">
 <td>22</td>
 <td>Continued…</td>
-<td>Set the second chart as circle. Use [Total Labour Force] as the label and adjust position it in the centre of the donut.<br />
-The centre of the donut chart will have labels that include the total labour force of the respective years and the median age.<br />
-The median age is created using calculated field with the following formula: if [Year] = 2009 then 41 elseif [Year] = 2019 then 44 END <img src="DataViz1_files/Images/step22_parameter.jpg" alt="Alt text" /></td>
+<td>Create a dual axis using the dummy measure value with dual axis <img src="DataViz1_files/Images/step21_dual.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="odd">
 <td>23</td>
 <td>Continued…</td>
-<td>Change the colour to white and reduce the size so that a donut is formed. <img src="DataViz1_files/Images/step23_color.jpg" alt="Alt text" /></td>
+<td>Set the second chart as circle. Use [Total Labour Force] as the label and adjust position it in the centre of the donut.<br />
+The centre of the donut chart will have labels that include the total labour force of the respective years and the median age.<br />
+The median age is created using calculated field with the following formula: if [Year] = 2009 then 41 elseif [Year] = 2019 then 44 END<br />
+<img src="DataViz1_files/Images/step22_parameter.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="even">
 <td>24</td>
 <td>Continued…</td>
-<td>The label is then customized to display teh crucial information. <img src="DataViz1_files/Images/step24_label.jpg" alt="Alt text" /></td>
+<td>Change the colour to white and reduce the size so that a donut is formed.<br />
+<img src="DataViz1_files/Images/step23_color.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="odd">
 <td>25</td>
+<td>Continued…</td>
+<td>The label is then customized to display the crucial information. <img src="DataViz1_files/Images/step24_label.jpg" alt="Alt text" /></td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>The resulting visualization of donut chart.</td>
+<td><img src="DataViz1_files/Images/step24_donut.jpg" alt="Alt text" /></td>
+</tr>
+<tr class="odd">
+<td>27</td>
 <td>Creating line chart that depicts the changes in LFPR in each age group from 2009 and 2019</td>
 <td>This chart would shows the trend, changes of the LFPR over the 10 years</td>
 </tr>
 <tr class="even">
-<td>26</td>
+<td>28</td>
 <td>Create calculated field [LFP Age Group] for each age group</td>
 <td><img src="DataViz1_files/Images/step25_lfp.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="odd">
-<td>27</td>
+<td>29</td>
 <td>Create calculated field [Labour Force Age Group] for each age group</td>
 <td><img src="DataViz1_files/Images/step27_labourforce.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="even">
-<td>28</td>
+<td>30</td>
 <td>Create calculated field [LDPR Age Group] for each age group</td>
 <td><img src="DataViz1_files/Images/step26_lfpr.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="odd">
-<td>29</td>
+<td>31</td>
 <td>Setting parameters of the line chart</td>
-<td>Quick table calculation of “Difference” is applied onto [LFPR Age Group]. This would allow the line chart to display the percentage difference. <img src="DataViz1_files/Images/step28_parameter.jpg" alt="Alt text" /></td>
+<td>Quick table calculation of “Difference” is applied onto [LFPR Age Group].<br />
+This would allow the line chart to display the percentage difference.<br />
+<img src="DataViz1_files/Images/step28_parameter.jpg" alt="Alt text" /></td>
 </tr>
 <tr class="even">
-<td>30</td>
+<td>32</td>
 <td>Dashboard of the visualization.</td>
-<td>Both the donut and the line charts are placed in the dashboard to show the neccesary data.</td>
+<td>Both the donut and the line charts are placed in the dashboard to show the necessary data.</td>
 </tr>
 </tbody>
 </table>
