@@ -1,9 +1,8 @@
 ---
 title: "My DataViz Makeover"
 site: distill::distill_website
-listing: 
+listing:
   posts:
   - dataviz
-
-
+  - dataviz2
 ---
