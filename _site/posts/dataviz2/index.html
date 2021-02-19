@@ -2063,7 +2063,7 @@ img {
 <p><strong>Data Visualisation Link (Tableau Public)</strong> - <a href="https://public.tableau.com/views/dataviz2Covid-19VaccinationSentiments/Dashboard4" class="uri">https://public.tableau.com/views/dataviz2Covid-19VaccinationSentiments/Dashboard4</a></p>
 <h1 id="a.-critiques-and-suggestions-for-current-visualisations">a. Critiques and Suggestions for Current Visualisations</h1>
 <div class="layout-chunk" data-layout="1-body-outset">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/critique.jpg" /><!-- --></p>
+<p><img src="DataViz2%20Images/critique.jpg" /><!-- --></p>
 </div>
 <h3 id="clarity">Clarity</h3>
 <ol type="1">
@@ -2080,7 +2080,7 @@ img {
 </ol>
 <h1 id="b.-proposed-alternative-data-visualisation">b. Proposed alternative data visualisation</h1>
 <div class="layout-chunk" data-layout="1-body-outset">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/drawing.jpg" /><!-- --></p>
+<p><img src="dataviz2%20Images/drawing.jpg" /><!-- --></p>
 </div>
 <h3 id="alternative-design">Alternative design</h3>
 <p>The alternative design is an interactive visualization. It uses Gantt chart to visualize the survey result and utilized dot graph with error bars (confidence interval) to show the optimism of the survey takers. This visualization assumes normal distribution for the population.</p>
@@ -2102,67 +2102,67 @@ img {
 <h2 id="data-cleaning-and-exploration">Data Cleaning and exploration</h2>
 <p>The data for the visualization was retrieved from <a href="https://github.com/YouGov-Data/covid-19-tracker">Imperial College London YouGov Covid 19 Behaviour Tracker Data Hub</a> hosted at Github . There is a total of 14 files in CSV format. Each CSV file contains data for a country and a union was performed to append all the data together.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step1union.jpg" width="400px" /></p>
+<p><img src="dataviz2%20Images/step1union.jpg" width="400px" /></p>
 </div>
 <p><br />
 </p>
 <p>A new column “Table Name” was created upon the union and they reflect the CSV file names (“country_name.csv”). A split was performed on “Table Name” column such that country name remains.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step2split.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/step2split.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>Initial data exploration was conducted, and it revealed that the data contains around 377 columns, most of which would not be used in the visualization. The redundant columns are removed, with 18 remaining columns, as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step3remain.jpg" width="200px" /></p>
+<p><img src="dataviz2%20Images/step3remain.jpg" width="200px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step4hide.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/step4hide.jpg" width="500px" /></p>
 </div>
 <p><br />
 </p>
 <p>As shown in the table above, some of the country’s data split the employment status into 7 columns. Hence a further investigation was conducted on employment status. It revealed that some dataset’s employment status is a single column containing 7 unique values and some dataset split the 7 values into 7 columns with binary values.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step5emp.jpg" width="400px" /></p>
+<p><img src="dataviz2%20Images/step5emp.jpg" width="400px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step6emp.jpg" width="320px" /></p>
+<p><img src="dataviz2%20Images/step6emp.jpg" width="320px" /></p>
 </div>
 <p><br />
 </p>
 <p>Hence a calculated filed “New_employment_status” is required to reconcile “employment_status”.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step7emp.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/step7emp.jpg" width="500px" /></p>
 </div>
 <p><br />
 </p>
 <p>A filter was made on the “endtime” to get January 2021 data as the survey was conducted during the said period.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step8filter.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/step8filter.jpg" width="500px" /></p>
 </div>
 <p><br />
 </p>
 <p>A check was performed, and no null value was observed in the survey questions vac_1, vac2_1, vac2_2, vac2_3, vac2_6 and vac3. This was done by constructing a simple text table of each survey questions against its counts.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step9vac.jpg" width="300px" /></p>
+<p><img src="dataviz2%20Images/step9vac.jpg" width="300px" /></p>
 </div>
 <p><br />
 </p>
 <p>Similar checks were performed on age, gender, household size, household children and “New_employment_status”. While no null value was observed, inconsistency of the household size and household children were observed; most of the values were captured in the nominal form, while a small number of them were captured in the measurement form as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step10child.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/step10child.jpg" width="700px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step10house.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/step10house.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>These inconsistencies were standardized to nominal format using the following calculated fields for amend for household size and children.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step11child.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/step11child.jpg" width="500px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/step11house.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/step11house.jpg" width="500px" /></p>
 </div>
 <p><br />
 </p>
@@ -2173,139 +2173,139 @@ img {
 <p><em>Vaccination Question</em></p>
 <p>This parameter serves to allow viewer to select from the list of 6 survey questions. The values were based on the original survey questions.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/visual1para.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/visual1para.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p><em>Main Parameters</em></p>
 <p>This parameter would allow viewer to toggle among different fields (Country, age, gender, etc.) such that the visualization would display according to viewer’s interest.There is an option called “All” to allow viewers to view at the overall level (all parameters).</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/visual2para.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/visual2para.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p><em>Age Bin Size</em></p>
 <p>The age in the data needs to be binned as there is a wide range of age values. To make the age bin dynamic, parameter with the following settings was used. The bin range was set between 5-50 to ensure that the bins are meaningful.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/visual3para.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/visual3para.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p><em>Sort By</em></p>
 <p>This allows interactive sorting. For this visualization, viewer will be allowed to toggle between “Alphabetical Order” and “Strongly Positive to vaccination”</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/visual4para.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/visual4para.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p><em>Sort Order</em></p>
 <p>Allow dynamically sort by ascending or descending order, affecting all the visualizations.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/visual5para.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/visual5para.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p><em>Secondary Parameters</em></p>
 <p>This parameter will display an optional secondary field for visualization. Its settings are similar to that of the “Main Parameters”, except that it has a “Null” option to allow viewer to have the option to hide the secondary parameter.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/visual6para.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/visual6para.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <h4 id="calculated-fields">Calculated Fields</h4>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/cal1.jpg" width="1200px" /></p>
+<p><img src="dataviz2%20Images/cal1.jpg" width="1200px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/cal2.jpg" width="1200px" /></p>
+<p><img src="dataviz2%20Images/cal2.jpg" width="1200px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/cal3.jpg" width="1200px" /></p>
+<p><img src="dataviz2%20Images/cal3.jpg" width="1200px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/cal4.jpg" width="1200px" /></p>
+<p><img src="dataviz2%20Images/cal4.jpg" width="1200px" /></p>
 </div>
 <p><em>Building Steps</em></p>
 <p>Create aliases for “Selected Question” so that the visualization would display the aliases instead.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping1.jpg" width="400px" /></p>
+<p><img src="dataviz2%20Images/stepping1.jpg" width="400px" /></p>
 </div>
 <p><br />
 </p>
 <p>The parameters “Vaccination Question” and Main Parameters” were turned on, while the Gantt Percent and Selected Parameters are pulled to Columns and Rows respectively.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping2.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping2.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>“Selected Question” was pulled into Color and it would display the starting position of each responses. The responses had to be sorted according to the positivity of the responses.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping3.jpg" width="240px" /></p>
+<p><img src="dataviz2%20Images/stepping3.jpg" width="240px" /></p>
 </div>
 <br />
 
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping4.jpg" width="1000px" /></p>
+<p><img src="dataviz2%20Images/stepping4.jpg" width="1000px" /></p>
 </div>
 <p><br />
 </p>
 <p>“Percentage” is dropped into Size so that the chart can display the response in horizontal stacked bar chart. However, the initial result shows that the bars’ positions are truncated and the fact that this is due to “Gantt Percent” and “Percentage” being computed at table level.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping5.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping5.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>“Gantt Percent” and “Percentage” were then computed using “Selected Question” and the basic Gantt chart takes shape.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping6.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping6.jpg" width="700px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping7.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping7.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>“Count” is dropped into Label to display the value of the response. For this visualization, only the extreme responses of “Strongly Agreed” and “Strongly Disagreed” would display the values to preserve the aesthetics of the visualization. This was done by toggling the label to display the min/max at cell level using the “Gantt Precent” field as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping8.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping8.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>Next, the label is configured to show as a “percent of total”, computed using “Selected Question”.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping9.jpg" width="1000px" /></p>
+<p><img src="dataviz2%20Images/stepping9.jpg" width="1000px" /></p>
 </div>
 <p><br />
 </p>
 <p>The format of the field was then changed to percentage with 0 decimal place to ensure good aesthetics.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping10.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping10.jpg" width="600px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping10_2.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping10_2.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>Country, age, gender, household size, household children and “New_employment_status” were dropped into filter so that the visualization could be filtered accordingly based on viewer’s interest.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping11.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping11.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>The sorting parameters are included, and it would only work after the sorting of the fields are toggled to capture the returns from the sorting parameters as shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping12.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping12.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>The “Selected Sec Parameters” are dropped into Columns in case viewers would like to view the visualizations in 2 dimensional fields.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping13.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping13.jpg" width="600px" /></p>
 </div>
 <p><br />
 </p>
 <p>The final product for the Gantt chart is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping14.jpg" width="1400px" /></p>
+<p><img src="dataviz2%20Images/stepping14.jpg" width="1400px" /></p>
 </div>
 <p><br />
 </p>
@@ -2315,50 +2315,50 @@ img {
 <p>This visualization will use the same parameters done in Gantt chart.</p>
 <p><em>Calculated Fields</em></p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping15.jpg" width="1400px" /></p>
+<p><img src="dataviz2%20Images/stepping15.jpg" width="1400px" /></p>
 </div>
 <p><br />
 </p>
 <p><em>Building Steps</em></p>
 <p>The base of the uncertainty visualization is based on dot graph. Thus, “Prop” and “Selected Parameters” are dropped into Columns and Rows respectively, while the Marks are changed to circle.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping16.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping16.jpg" width="600px" /></p>
 </div>
 <p><br />
 </p>
 <p>Next, Measure values containing ”Prop_Upper_Limit” and ”Prop_Lower_Limit” was placed into Columns and the marks were changed to line for this case.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping17.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping17.jpg" width="600px" /></p>
 </div>
 <p><br />
 </p>
 <p>“Prop” and Measure Values are then merged using dual axis with synchronizing axes. “Measure names” was droppedinto the path to generate the error bars.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping18.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping18.jpg" width="600px" /></p>
 </div>
 <p><br />
 </p>
 <p>For the purpose of aesthetics, this visualization would match color of the dot graph to that of the Gantt chart based on the response of interest (either strongly disagreed or strongly agreed depending on the survey question). “Color Switcher” is dropped into Color and the colors were chose based on the “Color Switcher” indicator. i.e. if color switcher shows, red, change the color to red, vice-versa.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping19.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping19.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>Like Gannt chart, the sort is configured to be based on the “Sort by” and “Sort Order” parameters</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping20.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping20.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>The “Secondary Parameter” is dropped into column in case viewers are interested to compare 2 dimensions of fields.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping20_2.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping20_2.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>The final product for the visualization of uncertainty using dot graph with error bars is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping21.jpg" width="1400px" /></p>
+<p><img src="dataviz2%20Images/stepping21.jpg" width="1400px" /></p>
 </div>
 <p><br />
 </p>
@@ -2367,45 +2367,45 @@ img {
 <p><em>Building Steps</em></p>
 <p>“Vaccination Question” is dropped into Text while “Color Switcher” is dropped into color as depicted below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping22.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping22.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>The colors are then selected according to the color switcher indicator.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping22_2.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/stepping22_2.jpg" width="500px" /></p>
 </div>
 <p><br />
 </p>
 <p>The final product for the visualization of the survey question is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping23.jpg" width="1400px" /></p>
+<p><img src="dataviz2%20Images/stepping23.jpg" width="1400px" /></p>
 </div>
 <p><br />
 </p>
 <h3 id="y-axis-title">Y-Axis Title</h3>
 <p>This is a simple visualization that would display the y-axis title of the visualization dynamically depending on the selection in “Selected Parameters”.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping24.jpg" width="400px" /></p>
+<p><img src="dataviz2%20Images/stepping24.jpg" width="400px" /></p>
 </div>
 <p><br />
 </p>
 <p>The text is toggled to display the words horizontally and the chart title is hidden.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping25.jpg" width="500px" /></p>
+<p><img src="dataviz2%20Images/stepping25.jpg" width="500px" /></p>
 </div>
 <p><br />
 </p>
 <p>The final product for the visualization is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping25_2.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping25_2.jpg" width="600px" /></p>
 </div>
 <p><br />
 </p>
 <h3 id="gantt-title-2">Gantt Title 2</h3>
 <p>2 y-axis titles are required, thus the “Y-Axis Title” visualization was duplicated.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping26.jpg" width="350px" /></p>
+<p><img src="dataviz2%20Images/stepping26.jpg" width="350px" /></p>
 </div>
 <p><br />
 </p>
@@ -2413,83 +2413,83 @@ img {
 <h3 id="building-steps">Building Steps</h3>
 <p>The dashboard size is set to “Automatic”.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping27.jpg" width="200px" /></p>
+<p><img src="dataviz2%20Images/stepping27.jpg" width="200px" /></p>
 </div>
 <p><br />
 </p>
 <p>A horizontal container is dropped into the dashboard and the Uncertainty visualization was dropped into the container.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping28.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping28.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>The Gantt chart was dropped to the right of the Uncertainty chart.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping29.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping29.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>The “Y-axis Title” was dropped onto the dashboard as floating object.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping30.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping30.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>Same process was done for “Y-Axis Title 2” and both are positioned to the respective visualization. 2 horizontal containers are placed above the main visualization as shown. The empty container on the top left will house the main parameters like “Vaccination Question” and “Main Parameters”.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping31.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping31.jpg" width="800px" /></p>
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping32.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping32.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>A text box and “Survey Question” visualization is inserted in between the main visualization and the top parameters panel. Ensure that the title of the “Vaccination Question” is hidden.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping33.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping33.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>Remove redundant legends like “Color Switcher” on the right of the dashboard. Rearrange the order of the right panel such that the legend appears on top. “Secondary parameters” are placed in the top panel beside “Main Parameters” The title of the visualizations is also amended. The filters for the Gantt chart is also displayed.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping34.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping34.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>To make the dashboard more aesthetically pleasing, the filters are changed to dropdown with multiple values and they are ordered according to the dropdown of the “Main Parameters”. The sorting parameters are then placed at the bottom of the right panel.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping35.jpg" width="800px" /></p>
+<p><img src="dataviz2%20Images/stepping35.jpg" width="800px" /></p>
 </div>
 <p><br />
 </p>
 <p>As the dashboard is interactive, it was observed that the tick marks intervals would change for both charts. As such, the tick marks intervals are fixed to 20% for Gantt chart and 10% for the uncertainty visualization respectively.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping36.jpg" width="600px" /></p>
+<p><img src="dataviz2%20Images/stepping36.jpg" width="600px" /></p>
 </div>
 <p><br />
 </p>
 <p>Inconsistency of the border lines between the 2 charts was observed. The Gantt chart’s borders were adjusted to be consistent to the uncertainty visualization.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping37.jpg" width="270px" /></p>
+<p><img src="dataviz2%20Images/stepping37.jpg" width="270px" /></p>
 </div>
 <p><br />
 </p>
 <p>The dashboard was then published onto Tableau Public.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping38.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping38.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <p>However, it was observed that the floating object “Y-axis Title 2” was truncated on Tableau Public, as such it was removed. The final dashboard on Tableau Public is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping39.jpg" width="700px" /></p>
+<p><img src="dataviz2%20Images/stepping39.jpg" width="700px" /></p>
 </div>
 <p><br />
 </p>
 <h1 id="e.-3-observations-from-final-visualization">e. 3 Observations from Final Visualization</h1>
 <h3 id="worrying-situation-in-japan">Worrying Situation in Japan</h3>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping40.jpg" width="1000px" /></p>
+<p><img src="dataviz2%20Images/stepping40.jpg" width="1000px" /></p>
 </div>
 <p><br />
 </p>
@@ -2497,14 +2497,14 @@ img {
 <p>It will be wise for the Japanese governments improve the morale of its citizens.</p>
 <h3 id="generation-gap">Generation Gap</h3>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping41.jpg" width="1000px" /></p>
+<p><img src="dataviz2%20Images/stepping41.jpg" width="1000px" /></p>
 </div>
 <p><br />
 </p>
 <p>In general, the older generation would want to get vaccinated than the younger generation. This is understandable as older people are more vulnerable to Covid-19 due to their weakened immune system, thus they would have better sentiments on the vaccination. Conversely, the younger generation is less optimistic about the vaccination.</p>
 <h3 id="children-makes-a-difference">Children Makes a Difference</h3>
 <div class="layout-chunk" data-layout="l-body">
-<p><img src="D:/Personal/SMU/2021/Visual%20Analytics/Distill%20Blog%201/_posts/dataviz/DataViz2%20Images/stepping42.jpg" width="1000px" /></p>
+<p><img src="dataviz2%20Images/stepping42.jpg" width="1000px" /></p>
 </div>
 <p><br />
 </p>

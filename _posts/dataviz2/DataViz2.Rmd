@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = FALSE, options(width = 100))
 # a.    Critiques and Suggestions for Current Visualisations 
 
 ```{r, echo=FALSE, message=FALSE, layout ='1-body-outset', fig.width=12, fig.height=6}
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/critique.jpg")
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/DataViz2 Images/critique.jpg")
 ```
 
 ### Clarity
@@ -58,7 +58,7 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 
 
 ```{r, echo=FALSE, message=FALSE, layout ='1-body-outset', fig.width=12, fig.height=6}
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/drawing.jpg")
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/drawing.jpg")
 ```
 
 ### Alternative design
@@ -96,7 +96,7 @@ The data for the visualization was retrieved from [Imperial College London YouGo
 
 ```{r, out.width = "400px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step1union.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step1union.jpg") 
 ```
 \
 
@@ -105,7 +105,7 @@ A new column “Table Name” was created upon the union and they reflect the CS
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step2split.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step2split.jpg") 
 ```
 \
 
@@ -114,12 +114,12 @@ Initial data exploration was conducted, and it revealed that the data contains a
 
 ```{r, out.width = "200px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step3remain.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step3remain.jpg") 
 ```
 
 ```{r, out.width = "500px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step4hide.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step4hide.jpg") 
 ```
 \
 
@@ -128,12 +128,12 @@ As shown in the table above, some of the country’s data split the employment s
 
 ```{r, out.width = "400px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step5emp.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step5emp.jpg") 
 ```
 
 ```{r, out.width = "320px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step6emp.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step6emp.jpg") 
 ```
 \
 
@@ -141,7 +141,7 @@ Hence a calculated filed “New_employment_status” is required to reconcile �
 
 ```{r, out.width = "500px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step7emp.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step7emp.jpg") 
 ```
 \
 
@@ -149,7 +149,7 @@ A filter was made on the “endtime” to get January 2021 data as the survey wa
 
 ```{r, out.width = "500px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step8filter.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step8filter.jpg") 
 ```
 \
 
@@ -157,7 +157,7 @@ A check was performed, and no null value was observed in the survey questions va
 
 ```{r, out.width = "300px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step9vac.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step9vac.jpg") 
 ```
 \
 
@@ -165,11 +165,11 @@ Similar checks were performed on age, gender, household size, household children
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step10child.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step10child.jpg") 
 ```
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step10house.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step10house.jpg") 
 ```
 \
 
@@ -177,11 +177,11 @@ These inconsistencies were standardized to nominal format using the following ca
 
 ```{r, out.width = "500px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step11child.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step11child.jpg") 
 ```
 ```{r, out.width = "500px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/step11house.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/step11house.jpg") 
 ```
 \
 
@@ -199,7 +199,7 @@ This parameter serves to allow viewer to select from the list of 6 survey questi
 
 ```{r, out.width = "800px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/visual1para.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/visual1para.jpg") 
 ```
 \
 
@@ -209,7 +209,7 @@ This parameter would allow viewer to toggle among different fields (Country, age
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/visual2para.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/visual2para.jpg") 
 ```
 \
 
@@ -219,7 +219,7 @@ The age in the data needs to be binned as there is a wide range of age values. T
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/visual3para.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/visual3para.jpg") 
 ```
 \
 
@@ -229,7 +229,7 @@ This allows interactive sorting. For this visualization, viewer will be allowed 
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/visual4para.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/visual4para.jpg") 
 ```
 \
 
@@ -239,7 +239,7 @@ Allow dynamically sort by ascending or descending order, affecting all the visua
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/visual5para.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/visual5para.jpg") 
 ```
 \
 
@@ -249,7 +249,7 @@ This parameter will display an optional secondary field for visualization. Its s
 
 ```{r, out.width = "700px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/visual6para.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/visual6para.jpg") 
 ```
 \
 
@@ -257,17 +257,17 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 
 ```{r, out.width = "1200px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/cal1.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/cal1.jpg") 
 ```
 ```{r, out.width = "1200px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/cal2.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/cal2.jpg") 
 ```
 ```{r, out.width = "1200px"} 
 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/cal3.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/cal3.jpg") 
 ```
 ```{r, out.width = "1200px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/cal4.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/cal4.jpg") 
 ```
 
 
@@ -276,88 +276,88 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 Create aliases for “Selected Question” so that the visualization would display the aliases instead.
 
 ```{r, out.width = "400px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping1.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping1.jpg") 
 ```
 \
 
 The parameters “Vaccination Question” and Main Parameters” were turned on, while the Gantt Percent and Selected Parameters are pulled to Columns and Rows respectively.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping2.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping2.jpg") 
 ```
 \
 
 “Selected Question” was pulled into Color and it would display the starting position of each responses. The responses had to be sorted according to the positivity of the responses.
 
 ```{r, out.width = "240px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping3.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping3.jpg") 
 ```
 \
 ```{r, out.width = "1000px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping4.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping4.jpg") 
 ```
 \
 
 "Percentage" is dropped into Size so that the chart can display the response in horizontal stacked bar chart. However, the initial result shows that the bars’ positions are truncated and the fact that this is due to “Gantt Percent” and “Percentage” being computed at table level. 
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping5.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping5.jpg") 
 ```
 \
 
 “Gantt Percent” and “Percentage” were then computed using “Selected Question” and the basic Gantt chart takes shape.
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping6.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping6.jpg") 
 ```
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping7.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping7.jpg") 
 ```
 \
 
 “Count” is dropped into Label to display the value of the response. For this visualization, only the extreme responses of “Strongly Agreed” and “Strongly Disagreed” would display the values to preserve the aesthetics of the visualization. This was done by toggling the label to display the min/max at cell level using the “Gantt Precent” field as shown below.
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping8.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping8.jpg") 
 ```
 \
 
 Next, the label is configured to show as a “percent of total”, computed using “Selected Question”. 
 
 ```{r, out.width = "1000px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping9.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping9.jpg") 
 ```
 \
 
 The format of the field was then changed to percentage with 0 decimal place to ensure good aesthetics.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping10.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping10.jpg") 
 ```
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping10_2.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping10_2.jpg") 
 ```
 \
 
 Country, age, gender, household size, household children and “New_employment_status” were dropped into filter so that the visualization could be filtered accordingly based on viewer’s interest.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping11.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping11.jpg") 
 ```
 \
 
 The sorting parameters are included, and it would only work after the sorting of the fields are toggled to capture the returns from the sorting parameters as shown below.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping12.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping12.jpg") 
 ```
 \
 
 The “Selected Sec Parameters” are dropped into Columns in case viewers would like to view the visualizations in 2 dimensional fields.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping13.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping13.jpg") 
 ```
 \
 
@@ -365,7 +365,7 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 The final product for the Gantt chart is shown below.
 
 ```{r, out.width = "1400px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping14.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping14.jpg") 
 ```
 \
 
@@ -382,7 +382,7 @@ This visualization will use the same parameters done in Gantt chart.
 *Calculated Fields*
 
 ```{r, out.width = "1400px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping15.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping15.jpg") 
 ```
 \
 
@@ -391,49 +391,49 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 The base of the uncertainty visualization is based on dot graph. Thus, “Prop” and “Selected Parameters” are dropped into Columns and Rows respectively, while the Marks are changed to circle.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping16.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping16.jpg") 
 ```
 \
 
 Next, Measure values containing ”Prop_Upper_Limit” and ”Prop_Lower_Limit” was placed into Columns and the marks were changed to line for this case.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping17.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping17.jpg") 
 ```
 \
 
 “Prop” and Measure Values are then merged using dual axis with synchronizing axes. "Measure names" was droppedinto the path to generate the error bars.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping18.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping18.jpg") 
 ```
 \
 
 For the purpose of aesthetics, this visualization would match color of the dot graph to that of the Gantt chart based on the response of interest (either strongly disagreed or strongly agreed depending on the survey question). “Color Switcher” is dropped into Color and the colors were chose based on the “Color Switcher” indicator. i.e. if color switcher shows, red, change the color to red, vice-versa.
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping19.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping19.jpg") 
 ```
 \
 
 Like Gannt chart, the sort is configured to be based on the “Sort by” and “Sort Order” parameters
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping20.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping20.jpg") 
 ```
 \
 
 The “Secondary Parameter” is dropped into column in case viewers are interested to compare 2 dimensions of fields.
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping20_2.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping20_2.jpg") 
 ```
 \
 
 The final product for the visualization of uncertainty using dot graph with error bars is shown below.
 
 ```{r, out.width = "1400px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping21.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping21.jpg") 
 ```
 \
 
@@ -446,21 +446,21 @@ This is a simple visualization aims to display the selected Survey Question dyna
  “Vaccination Question” is dropped into Text while “Color Switcher” is dropped into color as depicted below.
  
  ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping22.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping22.jpg") 
 ```
 \
 
 The colors are then selected according to the color switcher indicator.
 
 ```{r, out.width = "500px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping22_2.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping22_2.jpg") 
 ```
 \
 
 The final product for the visualization of the survey question is shown below.
 
 ```{r, out.width = "1400px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping23.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping23.jpg") 
 ```
 \
 
@@ -470,21 +470,21 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 This is a simple visualization that would display the y-axis title of the visualization dynamically depending on the selection in “Selected Parameters”.
 
 ```{r, out.width = "400px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping24.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping24.jpg") 
 ```
 \
 
 The text is toggled to display the words horizontally and the chart title is hidden.
 
 ```{r, out.width = "500px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping25.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping25.jpg") 
 ```
 \
 
 The final product for the visualization is shown below.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping25_2.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping25_2.jpg") 
 ```
 \
 
@@ -493,7 +493,7 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 2 y-axis titles are required, thus the “Y-Axis Title” visualization was duplicated.
 
 ```{r, out.width = "350px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping26.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping26.jpg") 
 ```
 \
 
@@ -504,87 +504,87 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 The dashboard size is set to “Automatic”.
 
 ```{r, out.width = "200px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping27.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping27.jpg") 
 ```
 \
 
 A horizontal container is dropped into the dashboard and the Uncertainty visualization was dropped into the container. 
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping28.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping28.jpg") 
 ```
 \
 
 The Gantt chart was dropped to the right of the Uncertainty chart.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping29.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping29.jpg") 
 ```
 \
 
 The “Y-axis Title” was dropped onto the dashboard as floating object.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping30.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping30.jpg") 
 ```
 \
 
 Same process was done for “Y-Axis Title 2” and both are positioned to the respective visualization. 2 horizontal containers are placed above the main visualization as shown. The empty container on the top left will house the main parameters like “Vaccination Question” and “Main Parameters”.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping31.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping31.jpg") 
 ```
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping32.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping32.jpg") 
 ```
 \
 
 A text box and “Survey Question” visualization is inserted in between the main visualization and the top parameters panel. Ensure that the title of the “Vaccination Question” is hidden.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping33.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping33.jpg") 
 ```
 \
 
 Remove redundant legends like “Color Switcher” on the right of the dashboard. Rearrange the order of the right panel such that the legend appears on top. “Secondary parameters” are placed in the top panel beside “Main Parameters” The title of the visualizations is also amended. The filters for the Gantt chart is also displayed.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping34.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping34.jpg") 
 ```
 \
 
 To make the dashboard more aesthetically pleasing, the filters are changed to dropdown with multiple values and they are ordered according to the dropdown of the “Main Parameters”. The sorting parameters are then placed at the bottom of the right panel.
 
 ```{r, out.width = "800px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping35.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping35.jpg") 
 ```
 \
 
 As the dashboard is interactive, it was observed that the tick marks intervals would change for both charts. As such, the tick marks intervals are fixed to 20% for Gantt chart and 10% for the uncertainty visualization respectively.
 
 ```{r, out.width = "600px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping36.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping36.jpg") 
 ```
 \
 
 Inconsistency of the border lines between the 2 charts was observed. The Gantt chart’s borders were adjusted to be consistent to the uncertainty visualization.
 
 ```{r, out.width = "270px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping37.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping37.jpg") 
 ```
 \
 
 The dashboard was then published onto Tableau Public. 
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping38.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping38.jpg") 
 ```
 \
 
 However, it was observed that the floating object "Y-axis Title 2" was truncated on Tableau Public, as such it was removed. The final dashboard on Tableau Public is shown below.
 
 ```{r, out.width = "700px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping39.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping39.jpg") 
 ```
 \
 
@@ -595,7 +595,7 @@ knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_p
 ### Worrying Situation in Japan
 
 ```{r, out.width = "1000px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping40.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping40.jpg") 
 ```
 \
 
@@ -607,7 +607,7 @@ It will be wise for the Japanese governments improve the morale of its citizens.
 ### Generation Gap
 
 ```{r, out.width = "1000px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping41.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping41.jpg") 
 ```
 \
 
@@ -616,7 +616,7 @@ In general, the older generation would want to get vaccinated than the younger g
 ### Children Makes a Difference
 
 ```{r, out.width = "1000px"} 
-knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz/DataViz2 Images/stepping42.jpg") 
+knitr::include_graphics("D:/Personal/SMU/2021/Visual Analytics/Distill Blog 1/_posts/dataviz2/dataviz2 Images/stepping42.jpg") 
 ```
 \
 
