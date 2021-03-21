@@ -328,6 +328,16 @@ As such, the color blend had to be fixed at the start and end such that the filt
 
 ![The color is solved](DataViz3_Images/step38.jpg){width=100%}
 
+Unfortunately, setting a fixed value for the color has its shortcoming as the next step is to add a parameter to allow user to dynamically switch the choropleth from "No. of events" to "fatality" or even "fatality rate"; "No. of events" and "fatality" have different range and fixing it will cause a misrepresentation of the colors.
+
+Nonetheless, the parameter to toggle between different statistic of interest has the following settings.
+
+![Parameter setting for statistics selection](DataViz3_Images/extra3.jpg){width=70%}
+
+An accompanying calculated field is used to allow user to toggle the statistics.
+
+![Parameter setting for statistics selection](DataViz3_Images/extra4.jpg){width=100%}
+
 Same [Event Date (ref)] filter will be applied to this worksheet so that the visualization would change accordingly based on the selection in the Slider.
 
 ![Filter setting on Event Date (Ref)](DataViz3_Images/step39.jpg){width=70%}
@@ -436,6 +446,18 @@ Next, the stacked line chart is given another change.a Dual axis with synchroniz
 
 ![Settings to insert are graph to show fatalities](DataViz3_Images/step65.jpg){width=90%}
 
+To make the slider to be more consistent with the rest of the visualization, an area graph showing fatality is added and the color of the charts are changed to white to avoid having the same color as the stacked line chart.
+
+The setting of the slider can be seen here.
+
+![Fatality area chart added to the slider and te color was changed to white](DataViz3_Images/extra1.jpg){width=90%}
+
+It is ensured that the filters selected on the dashboard of one worksheet will be reflected to the rest.
+
+A filter action is required as selection of the country on the map would not result in a filter of the data. The setting of the action is shown below. With this action, any selection of country on the map will filter the data accordingly across the dashboard and any release of it will un-filter.
+
+![Setting of action filter](DataViz3_Images/extra5.jpg){width=70%}
+
 With all of the changes made, the final dashboard is completed.
 
 ![Final Dashboard](DataViz3_Images/step66.jpg){width=100%}
@@ -455,3 +477,23 @@ The deadliest year occurred in 2017 with 5,496 fatalities recorded. This is main
 ![Vietnam](DataViz3_Images/ob2.jpg){width=100%}
 
 Vietnam recorded the lowest number of fatality and fatality rate among the countries listed in the visualization. From the perspective of the ACLED, Vietnam might be one of the safest country among the countries listed in the visualization.
+
+### Armed conflict events are on the rise in South East Asia region
+
+![Rising number of armed conflicts](DataViz3_Images/ob3.jpg){width=100%}
+
+There is a upwards trend for the number of events being recorded in the South East Asia region over the years. While the fatality rate is relatively low, the fact that the number is on the rise can be a concern as this can be a sign of destabilization of the region. Hence, there is a greater need for the ASEAN leaders to work toegether to safeguard the stability of the region.
+
+### Myanmar and Philippines with the highest fatality in the region
+ 
+ 
+![High no. of events in Myanmar and Philippines](DataViz3_Images/ob4.jpg){width=100%}
+![High fatalities in Myanmar and Philippines](DataViz3_Images/ob4_2.jpg){width=100%}
+
+Myanmar and Philippines have have the highest number of fatalities and armed conflict events over the years and this is due to various internal issues the countries are facing. Hence, regional leaders may offer to do more to aid these 2 countries to ensure stability of the region.
+
+### Conflict zones that have violent events often take place at border region or region further away from central authority
+
+![Violent events in South East Asia](DataViz3_Images/ob5.jpg){width=100%}
+
+Violent events such as battles and explosions often take place at border region or region further away from central authority. This is expected as the border regions can be a safe haven for insurgents.
