@@ -496,4 +496,4 @@ Myanmar and Philippines have have the highest number of fatalities and armed con
 
 ![Violent events in South East Asia](DataViz3_Images/ob5.jpg){width=100%}
 
-Violent events such as battles and explosions often take place at border region or region further away from central authority. This is expected as the border regions can be a safe haven for insurgents.
+Violent events such as battles and explosions often take place at border region or region further away from central authority. This is expected as the border regions can be a safe haven for insurgents. Hence, cross border cooperations may be needed to contain or eliminate such violent events.
